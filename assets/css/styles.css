@@ -348,7 +348,7 @@ img {
 #sobre-projetos {
     /* background-color: red; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 
 }
 
@@ -442,6 +442,61 @@ img {
 
 .portfolio__link-name {
     color: var(--dark-color);
+}
+
+/* forest ink session */
+
+/* .portfolio-container-forest {
+    background-color: black;
+} */
+
+/* .portfolio-container-forest .p-projeto {
+    background-color: black;
+} */
+
+.forest-title {}
+
+.forest-title h1 {
+    font-family: 'Playfair Display', serif;
+    margin-left: 2em;
+    font-size: 3em;
+    color: black;
+}
+
+.h1-text-fill-orange {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: thin RGB(234, 88, 12);
+    opacity: .1;
+    font-size: 120px;
+    /* position: absolute;
+    top: 20%; */
+    left: 0;
+    /* background-color: green; */
+    line-height: 104px;
+}
+
+#p-sobre-projeto-forest .skills-sobre-projeto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/forest-blur.png);
+    filter: blur(4px);
+    /* z-index: 999; */
+    opacity: .999;
+}
+
+#p-sobre-projeto-forest .skills-sobre-projeto .skills__box .skills__name {
+    min-width: 90%;
+    font-size: .90em;
+    color: #b73b12;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0;
+    border: 1px solid #b73b12;
+
+
 }
 
 /* ===== CONTACT =====*/
@@ -539,6 +594,13 @@ img {
 @media screen and (max-width:450px) {
     .skills-sobre-projeto .skills__box .skills__name {
         font-size: .505em;
+    }
+}
+
+/* forest ink skills */
+@media screen and (max-width:500px) {
+    #p-sobre-projeto-forest .skills-sobre-projeto #skills-box-sobre .skills__name {
+        font-size: .70em;
     }
 }
 
