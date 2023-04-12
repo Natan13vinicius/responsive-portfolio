@@ -312,7 +312,7 @@ img {
     display: inline-block;
     font-size: var(--small-font-size);
     margin-right: var(--mb-2);
-    margin-bottom: var(--mb-3);
+    margin-bottom: 1em;
     padding: .25rem .5rem;
     background-color: var(--white-color);
     border-radius: .25rem;
@@ -342,6 +342,7 @@ img {
 .umi-section .umi-title h1 {
     margin-left: 2em;
     font-family: 'Syncopate', sans-serif;
+    color: RGB(67, 101, 146);
 }
 
 #sobre-projetos {
@@ -372,9 +373,27 @@ img {
 
 .skills-sobre-projeto {
     padding: 1em;
-    background-color: RGB(67, 101, 146);
+    /* background-color: RGB(67, 101, 146); */
     border-radius: 10px;
     max-height: 80vh;
+    /* background-image: url(/assets/img/imhhh.png); */
+    position: relative;
+
+}
+
+/* pseudoclasse */
+.skills-sobre-projeto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/imhhh.png);
+    filter: blur(4px);
+    /* z-index: 999; */
+    opacity: .999;
+
 
 }
 
@@ -535,6 +554,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+    #sobre-projeto-img {
+        padding: none;
+        padding-left: 3vw;
+    }
 
 
     body {
@@ -635,6 +658,8 @@ img {
         justify-items: center;
     }
 }
+
+@media screen and (min-width:850) {}
 
 @media screen and (min-width: 1024px) {
     .bd-grid {
