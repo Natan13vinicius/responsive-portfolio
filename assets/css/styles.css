@@ -7,6 +7,11 @@
     --font-medium: 500;
 }
 
+/* html {
+    overflow-x: hidden;
+
+} */
+
 /*===== Colores =====*/
 :root {
     --first-color: #161014;
@@ -55,6 +60,11 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 body {
@@ -309,7 +319,7 @@ img {
 }
 
 .skills__name:hover {
-    background-color: var(--first-color);
+    background-color: RGB(67, 101, 146);
     color: var(--white-color);
 }
 
@@ -322,9 +332,65 @@ img {
     background-color: var(--white-color);
 }
 
+
+
 .portfolio__container {
     justify-items: center;
     row-gap: 2rem;
+}
+
+.umi-section .umi-title h1 {
+    margin-left: 2em;
+    font-family: 'Syncopate', sans-serif;
+}
+
+#sobre-projetos {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+.p-projeto {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    line-height: 2.30em;
+}
+
+#sobre-projeto-img {
+    border-radius: 15px;
+}
+
+.p-sobre-projeto {
+    text-align: center;
+    display: flex;
+
+    flex-direction: column;
+
+
+}
+
+.skills-sobre-projeto {
+    padding: 1em;
+    background-color: RGB(67, 101, 146);
+    border-radius: 10px;
+    max-height: 80vh;
+
+}
+
+.skills-sobre-projeto .skills__box .skills__name {
+    min-width: 90%;
+    font-size: .90em;
+    color: RGB(67, 101, 146);
+    background-color: white;
+    border-radius: 20px;
+
+
+}
+
+.skills-sobre-projeto .skills__box {
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio__img {
@@ -441,9 +507,36 @@ img {
     .home__img {
         width: 230px;
     }
+
+
+}
+
+@media screen and (max-width:365px) {
+    .skills-sobre-projeto .skills__box .skills__name {
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .skills-sobre-projeto .skills__box .skills__name {
+        font-size: .505em;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #skills-box-sobre {
+        display: flex;
+        background-color: none;
+        flex-direction: column;
+        color: red;
+
+    }
+
 }
 
 @media screen and (min-width: 768px) {
+
+
     body {
         margin: 0;
     }
@@ -560,4 +653,6 @@ img {
         width: 50%;
         right: 24%;
     }
+
+
 }
