@@ -456,15 +456,16 @@ img {
 .forest-title h1 {
     font-family: 'Playfair Display', serif;
     margin-left: em;
-    font-size: 2em;
-    color: black;
+    font-size: 2.40em;
+    color: rgb(51, 51, 51);
+
+
 }
 
 .h1-text-fill-orange {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: thin RGB(234, 90, 10);
-    opacity: .4;
-    font-size: 100x;
+    /* -webkit-text-fill-color: transparent; */
+    color: thin RGB(234, 90, 10);
+    font-size: 2em;
     /* position: absolute;
     top: 20%; */
     left: 0;
