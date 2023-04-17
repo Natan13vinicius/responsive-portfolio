@@ -162,9 +162,12 @@ img {
         height: 100%;
         padding: 2rem;
         background-color: rgba(255, 255, 255, .3);
-        /* transition: .5s;
-        backdrop-filter: blur(10px); */
+        transition: .5s;
+        backdrop-filter: blur(10px);
+        text-align: center;
     }
+
+
 }
 
 .nav__item {
@@ -459,15 +462,15 @@ img {
 .forest-title h1 {
     font-family: 'Playfair Display', serif;
     margin-left: em;
-    font-size: 3em;
+    font-size: 2em;
     color: black;
 }
 
 .h1-text-fill-orange {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: thin RGB(234, 90, 10);
-    opacity: ;
-    font-size: 120px;
+    opacity: .4;
+    font-size: 100x;
     /* position: absolute;
     top: 20%; */
     left: 0;
