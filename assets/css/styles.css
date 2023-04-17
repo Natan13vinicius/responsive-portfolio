@@ -447,15 +447,9 @@ img {
     color: var(--dark-color);
 }
 
-/* forest ink session */
+/* !!!!!!!FOREST INK SESSION!!!!!!! */
 
-/* .portfolio-container-forest {
-    background-color: black;
-} */
 
-/* .portfolio-container-forest .p-projeto {
-    background-color: black;
-} */
 
 .forest-title {}
 
@@ -504,6 +498,40 @@ img {
 
 .forest-box {
     background-color: red;
+}
+
+/* !!!!!INTENSE OFICIAL SESSION!!!!!! */
+.intense-title h1 {
+    text-shadow: 5px 1px 20px RGB(246, 84, 177);
+    color: RGB(246, 84, 177);
+    font-family: none;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+#p-sobre-projeto-intense .skills-sobre-projeto .skills__box .skills__name {
+    min-width: 90%;
+    font-size: .65em;
+    color: white;
+    background-color: RGB(227, 50, 159);
+    border-radius: 10px;
+
+
+}
+
+#p-sobre-projeto-intense .skills-sobre-projeto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/intense-blur-background.png);
+    background-position: right;
+    backdrop-filter: blur(10px);
+    /* z-index: 999; */
+    /* opacity: .999; */
 }
 
 /* ===== CONTACT =====*/
