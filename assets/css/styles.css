@@ -453,13 +453,10 @@ img {
 
 .forest-title {}
 
-.forest-title h1 {
-    font-family: 'Playfair Display', serif;
-    margin-left: em;
-    font-size: 2.40em;
-    color: rgb(51, 51, 51);
-
-
+.forest-title img {
+    /* width: 22em; */
+    height: 5em;
+    margin-left: -.50em;
 }
 
 .h1-text-fill-orange {
@@ -502,11 +499,9 @@ img {
 }
 
 /* !!!!!INTENSE OFICIAL SESSION!!!!!! */
-.intense-title h1 {
-    text-shadow: 5px 1px 20px RGB(246, 84, 177);
-    color: RGB(246, 84, 177);
-    font-family: none;
-    font-family: 'Roboto', sans-serif;
+.intense-title img {
+    width: 15em;
+    height: 15em;
 
 
 }
@@ -536,6 +531,11 @@ img {
 }
 
 /* !!!!! MPPARTS SESSION !!!!!! */
+
+.mpparts-title img {
+    width: 15em;
+}
+
 #p-sobre-projeto-mpparts .skills-sobre-projeto::before {
     content: '';
     position: absolute;
